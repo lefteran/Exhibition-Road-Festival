@@ -1,0 +1,52 @@
+Air pollution websites
+
+https://www.aqmesh.com/product/data-access-package-options/
+https://www.breathelondon.org/initial-findings-lambeth-southwark-air-quality-pollution-monitoring/
+
+
+Website design
+
+https://carto.com/
+
+
+
+
+Javascript
+
+https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/
+
+https://startbootstrap.com/themes/sb-admin-2/
+
+https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/blob/master/js/demo/chart-bar-demo.js
+
+https://www.chartjs.org/
+
+https://jsbin.com/rodurop/edit?html,js,output
+
+
+
+
+
+Schedule jobs (instead of while(1))
+
+https://stackabuse.com/scheduling-jobs-with-python-crontab/
+
+https://docs.microsoft.com/en-us/powershell/module/psscheduledjob/register-scheduledjob?view=powershell-5.1
+
+https://datatofish.com/python-script-windows-scheduler/
+
+https://stackoverflow.com/questions/2725754/schedule-python-script-windows-7
+
+
+
+
+Get DNS address
+https://www.noip.com/
+
+
+
+MAP OF CAMERAS
+https://londonist.com/london/transport/an-interactive-live-traffic-map-of-london
+
+
+

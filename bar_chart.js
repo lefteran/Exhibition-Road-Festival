@@ -62,7 +62,7 @@ let massPopChart = new Chart(myChart, {
 	options:{
 		title:{
 			display:true,
-			text:'Average vehicle flow',
+			text:'Average vehicle flows',
 			fontSize:25
 		},
 		legend:{
