@@ -18,8 +18,8 @@ for (i = 0; i < dataLength; i++) {
 let massPopChart = new Chart(myChart, {
 	type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
 	data:{
-		labels:['Kensington Rd/Exhibition Rd', 'Exhibition Rd/Cromwell Rd', 'Brompton Rd', 
-		'Brompton Rd/Beaufort Grns', 'A4 Cromwell Rd/Queens Gate', 'A4 Cromwell Rd/Gloucester Rd'],
+		labels:['Kensington/Exhibition Rds', 'Exhibition/Cromwell Rds', 'Brompton Rd', 
+		'Brompton Rd/Beaufort Grns', 'A4 Cromwell Rd/Queens Gate', 'A4 Cromwell/Gloucester Rds'],
 		datasets:[
 			{
 				label:'week 1',
