@@ -1,0 +1,5 @@
+- [x] script to get data from csv to json (traffic)
+- [ ] script to get data from csv to json (emissions). Select the scaled value from csv
+- [ ] bar chart for the three sensors. Each sensor must have three columns (NO_2, PM_2 and PM_{2.5})
+- [ ] line chart for each sensor. The line chart must include three lines one for each of NO_2, PM_2 and PM_{2.5} as a function of time.
+- [ ] download data and calculate the vehicle flows and the emissions for previous weekend
