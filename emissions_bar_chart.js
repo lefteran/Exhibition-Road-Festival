@@ -21,7 +21,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 		labels:['Intersection (2037150)', 'Science Museum (2033150)', 'Natural History Museum (2039150)'],
 		datasets:[
 			{
-				label:'NO2',
+				label:'NO2 - 22,23/06/2019',
 				data:[week1Flows[0], week1Flows[1], week1Flows[2], week1Flows[3], week1Flows[4], week1Flows[5]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -35,7 +35,21 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'PM10',
+				label:'NO2 - 29/06/2019',
+				data:[week1Flows[0], week1Flows[1], week1Flows[2], week1Flows[3], week1Flows[4], week1Flows[5]],
+				//backgroundColor:'green',
+				backgroundColor:[
+					'rgba(255, 99, 132, 0.8)',
+					'rgba(255, 99, 132, 0.8)',
+					'rgba(255, 99, 132, 0.8)'
+				],
+				borderWidth:1,
+				borderColor:'#777',
+				hoverBorderWidth:3,
+				hoverBorderColor:'#000'
+			},
+			{
+				label:'PM10 - 22,23/06/2019',
 				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -47,15 +61,42 @@ let massPopChart = new Chart(emissionsBarChart, {
 				borderColor:'#777',
 				hoverBorderWidth:3,
 				hoverBorderColor:'#000'
+			},
+			{
+				label:'PM10 - 29/06/2019',
+				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
+				//backgroundColor:'green',
+				backgroundColor:[
+					'rgba(50, 150, 250, 0.6)',
+					'rgba(50, 150, 250, 0.6)',
+					'rgba(50, 150, 250, 0.6)'
+				],
+				borderWidth:1,
+				borderColor:'#777',
+				hoverBorderWidth:3,
+				hoverBorderColor:'#000'
             },
             {
-				label:'PM2.5',
+				label:'PM2.5 - 22,23/06/2019',
 				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(0, 255, 127, 0.3)',
                     'rgba(0, 255, 127, 0.3)',
                     'rgba(0, 255, 127, 0.3)'				],
+				borderWidth:1,
+				borderColor:'#777',
+				hoverBorderWidth:3,
+				hoverBorderColor:'#000'
+			},
+			{
+				label:'PM2.5 - 29/06/2019',
+				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
+				//backgroundColor:'green',
+				backgroundColor:[
+					'rgba(0, 255, 127, 0.6)',
+                    'rgba(0, 255, 127, 0.6)',
+                    'rgba(0, 255, 127, 0.6)'				],
 				borderWidth:1,
 				borderColor:'#777',
 				hoverBorderWidth:3,

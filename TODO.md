@@ -8,4 +8,5 @@
 - [ ] line chart for all the days from weekend1 till current day
 - [ ] try detdata26062019*
 - [ ] heroku
-- [ ] traffic js file to get the values from fixedWeekTrafficData.json file for fixed week
+- [ ] ~~traffic js file to get the values from fixedWeekTrafficData.json file for fixed week~~
+- [ ] subscripts for NO2
