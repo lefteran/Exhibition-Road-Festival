@@ -3,7 +3,7 @@ let emissionsLineChart = document.getElementById('emissionsLineChart').getContex
 let theEmissionsLineChart = new Chart(emissionsLineChart, {
     type: 'line',
     data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["Saturday 22/6", "Sunday 23/6", "Monday 24/6", "Tuesday 25/6", "Wednesday 26/6", "Thursday 27/6", "Friday 28/6", "Saturday 29/6", "Sunday 30/6"],
         datasets: [
             {
                 label: "NO2",
