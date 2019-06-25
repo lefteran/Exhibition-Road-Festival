@@ -8,7 +8,7 @@ import urllib.request
 import os
 import datetime
 import requests
-import time
+from time import time
 import trafficCsvToJson
 
 def downloadJamCams(website, camera, extension, videosFolder):
@@ -65,14 +65,14 @@ if __name__ == "__main__":
 	# 	downloadJamCams(website, camera, extension, videosFolder)
 
 	# TIMS
-	start_time = time.time()
+	start_time = time()
 	filename1 = 'pythonScript/TIMS/detdata25042019-164522.csv'
 	filename2 = downloadTims()
-	jsonFilename = 'data.json'
+	jsonFilename = 'trafficData.json'
 
 	week1Flows = trafficCsvToJson.getAvgFlows(filename1)
 	week2Flows = trafficCsvToJson.getAvgFlows(filename2)
 	trafficCsvToJson.exportToJson(jsonFilename, week1Flows, week2Flows)
 
-	print("--- %s seconds ---" % (time.time() - start_time))
+	print("--- %s seconds ---" % (time() - start_time))
 

@@ -1,5 +1,5 @@
 // https://www.youtube.com/watch?v=sE08f4iuOhA
-let myChart = document.getElementById('myChart').getContext('2d');
+let emissionsBarChart = document.getElementById('emissionsBarChart').getContext('2d');
 
 // Global Options
 Chart.defaults.global.defaultFontFamily = 'Arial';
@@ -15,10 +15,10 @@ for (i = 0; i < dataLength; i++) {
 	week2Flows.push(myData[i].week2);
 }
 
-let massPopChart = new Chart(myChart, {
+let massPopChart = new Chart(emissionsBarChart, {
 	type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
 	data:{
-		labels:['Hyde Park (2037150)', 'Science Museum (2033150)', 'Victoria and Albert (2039150)'],
+		labels:['Intersection (2037150)', 'Science Museum (2033150)', 'Natural History Museum (2039150)'],
 		datasets:[
 			{
 				label:'NO2',
@@ -35,7 +35,7 @@ let massPopChart = new Chart(myChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'PM2',
+				label:'PM10',
 				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
 				//backgroundColor:'green',
 				backgroundColor:[

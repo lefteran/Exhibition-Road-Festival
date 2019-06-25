@@ -1,5 +1,5 @@
 // https://www.youtube.com/watch?v=sE08f4iuOhA
-let myChart = document.getElementById('myChart').getContext('2d');
+let trafficChart = document.getElementById('trafficChart').getContext('2d');
 
 // Global Options
 Chart.defaults.global.defaultFontFamily = 'Arial';
@@ -15,7 +15,7 @@ for (i = 0; i < dataLength; i++) {
 	week2Flows.push(myData[i].week2);
 }
 
-let massPopChart = new Chart(myChart, {
+let massPopChart = new Chart(trafficChart, {
 	type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
 	data:{
 		labels:['Kensington/Exhibition Rds', 'Exhibition/Cromwell Rds', 'Brompton Rd', 
@@ -62,7 +62,7 @@ let massPopChart = new Chart(myChart, {
 	options:{
 		title:{
 			display:true,
-			text:'Average vehicle flows',
+			text:'Average vehicle flows per 15 min',
 			fontSize:25
 		},
 		legend:{
