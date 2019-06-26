@@ -94,7 +94,7 @@ def getFixedWeekFlowsDict():
 def getTodaysFlowsDict():
     flowsDict = initFlowsDict()
     count = 0
-    todaysPath = os.path.join(os.getcwd(), "pythonScript\\today")
+    todaysPath = os.path.join(os.getcwd(), "pythonScript\\todays_traffic")
     todaysList = os.listdir(todaysPath)
     for filename in todaysList:
         count += 1

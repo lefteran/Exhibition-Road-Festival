@@ -8,12 +8,32 @@ Chart.defaults.global.defaultFontColor = '#777';
 
 var myData = JSON.parse(data);
 var dataLength = Object.keys(myData).length;
-var week1Flows = [];
-var week2Flows = [];
-for (i = 0; i < dataLength; i++) {
-	week1Flows.push(myData[i].week1);
-	week2Flows.push(myData[i].week2);
-}
+
+var sensor1Emissions = [];
+var sensor2Emissions = [];
+var sensor3Emissions = [];
+
+sensor1Emissions.push(myData[0].no2Old);
+sensor1Emissions.push(myData[0].no2New);
+sensor1Emissions.push(myData[0].pm10Old);
+sensor1Emissions.push(myData[0].pm10New);
+sensor1Emissions.push(myData[0].pm25Old);
+sensor1Emissions.push(myData[0].pm25New);
+
+sensor2Emissions.push(myData[1].no2Old);
+sensor2Emissions.push(myData[1].no2New);
+sensor2Emissions.push(myData[1].pm10Old);
+sensor2Emissions.push(myData[1].pm10New);
+sensor2Emissions.push(myData[1].pm25Old);
+sensor2Emissions.push(myData[1].pm25New);
+
+sensor3Emissions.push(myData[2].no2Old);
+sensor3Emissions.push(myData[2].no2New);
+sensor3Emissions.push(myData[2].pm10Old);
+sensor3Emissions.push(myData[2].pm10New);
+sensor3Emissions.push(myData[2].pm25Old);
+sensor3Emissions.push(myData[2].pm25New);
+
 
 let massPopChart = new Chart(emissionsBarChart, {
 	type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
@@ -22,7 +42,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 		datasets:[
 			{
 				label:'NO2 - 22,23/06/2019',
-				data:[week1Flows[0], week1Flows[1], week1Flows[2], week1Flows[3], week1Flows[4], week1Flows[5]],
+				data:[sensor1Emissions[0], sensor2Emissions[0], sensor3Emissions[0]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(255, 99, 132, 0.6)',
@@ -36,7 +56,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'NO2 - 29/06/2019',
-				data:[week1Flows[0], week1Flows[1], week1Flows[2], week1Flows[3], week1Flows[4], week1Flows[5]],
+				data:[sensor1Emissions[1], sensor2Emissions[1], sensor3Emissions[1]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(255, 99, 132, 0.8)',
@@ -50,7 +70,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM10 - 22,23/06/2019',
-				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
+				data:[sensor1Emissions[2], sensor2Emissions[2], sensor3Emissions[2]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(50, 150, 250, 0.3)',
@@ -64,7 +84,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM10 - 29/06/2019',
-				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
+				data:[sensor1Emissions[3], sensor2Emissions[3], sensor3Emissions[3]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(50, 150, 250, 0.6)',
@@ -78,7 +98,7 @@ let massPopChart = new Chart(emissionsBarChart, {
             },
             {
 				label:'PM2.5 - 22,23/06/2019',
-				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
+				data:[sensor1Emissions[4], sensor2Emissions[4], sensor3Emissions[4]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(0, 255, 127, 0.3)',
@@ -91,7 +111,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM2.5 - 29/06/2019',
-				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
+				data:[sensor1Emissions[5], sensor2Emissions[5], sensor3Emissions[5]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(0, 255, 127, 0.6)',

@@ -10,3 +10,4 @@
 - [ ] heroku
 - [ ] ~~traffic js file to get the values from fixedWeekTrafficData.json file for fixed week~~
 - [ ] subscripts for NO2
+- [ ] convert calculateAvgFlowList --> calculateAvgFlowDict
