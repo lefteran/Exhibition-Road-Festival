@@ -118,4 +118,3 @@ weekdayListOfDicts = emissionsLineChartCsvToJson.getAllDaysListOfDicts()
 
 exportFilenamePath = "d:\\Github\\Exhibition-Road-Festival" + "\\emissionData.json"
 exportAvgEmissionsToJson(exportFilenamePath, weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts)
- 
