@@ -1,6 +1,7 @@
 import os.path
 import re
 import emissionsLineChartCsvToJson
+import pathlib
 
 def initSensorEmissionsDict():
     sensorEmissionsDict = {
@@ -105,9 +106,9 @@ def getAllSensorsEmissionsDict(emissionsPath):
     return allSensorsEmissionsDict
 
 
-weekend1516EmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekend1516_emissions")
-weekendEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekend_emissions")
-todaysEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\todays_emissions")
+weekend1516EmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend1516_emissions"
+weekendEmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend_emissions"
+todaysEmissionsPath = str(pathlib.Path(__file__).parent) + "\\todays_emissions"
 
 weekend1516SensorsEmissionsDict = getAllSensorsEmissionsDict(weekend1516EmissionsPath)
 weekendSensorsEmissionsDict = getAllSensorsEmissionsDict(weekendEmissionsPath)
@@ -115,4 +116,5 @@ todaysSensorsEmissionsDict = getAllSensorsEmissionsDict(todaysEmissionsPath)
 
 weekdayListOfDicts = emissionsLineChartCsvToJson.getAllDaysListOfDicts()
 
-exportAvgEmissionsToJson("emissionData.json", weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts)
+exportFilenamePath = "d:\\Github\\Exhibition-Road-Festival" + "\\emissionData.json"
+exportAvgEmissionsToJson(exportFilenamePath, weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts)

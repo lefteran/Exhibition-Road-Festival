@@ -1,5 +1,6 @@
 import os.path
 import re
+import pathlib
 
 def initSensorEmissionsDict():
     sensorEmissionsDict = {
@@ -58,15 +59,15 @@ def dictOfTheDay(daysPath):
 
 def getAllDaysListOfDicts():
     listOfDicts = []
-    saturday1EmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\saturday1")
-    sunday1EmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\sunday1")
-    mondayEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\monday")
-    tuesdayEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\tuesday")
-    wednesdayEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\wednesday")
-    thursdayEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\thursday")
-    fridayEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\friday")
-    saturday2EmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\saturday2")
-    sunday2EmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekday_emissions\\sunday2")
+    saturday1EmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\saturday1"
+    sunday1EmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\sunday1"
+    mondayEmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\monday"
+    tuesdayEmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\tuesday"
+    wednesdayEmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\wednesday"
+    thursdayEmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\thursday"
+    fridayEmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\friday"
+    saturday2EmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\saturday2"
+    sunday2EmissionsPath =  str(pathlib.Path(__file__).parent) + "\\weekday_emissions\\sunday2"
 
     saturday1EmissionsDict = dictOfTheDay(saturday1EmissionsPath)
     listOfDicts.append(saturday1EmissionsDict)
