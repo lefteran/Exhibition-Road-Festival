@@ -22,7 +22,7 @@ let massPopChart = new Chart(trafficChart, {
 		'Brompton Rd/Beaufort Grns', 'A4 Cromwell Rd/Queens Gate', 'A4 Cromwell/Gloucester Rds'],
 		datasets:[
 			{
-				label:'week 1',
+				label:'Last weekend',
 				data:[week1Flows[0], week1Flows[1], week1Flows[2], week1Flows[3], week1Flows[4], week1Flows[5]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -40,7 +40,7 @@ let massPopChart = new Chart(trafficChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'week 2',
+				label:'This weekend',
 				data:[week2Flows[0], week2Flows[1], week2Flows[2], week2Flows[3], week2Flows[4], week2Flows[5]],
 				//backgroundColor:'green',
 				backgroundColor:[

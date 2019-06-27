@@ -87,6 +87,3 @@ def getAllDaysListOfDicts():
     sunday2EmissionsDict = dictOfTheDay(sunday2EmissionsPath)
     listOfDicts.append(sunday2EmissionsDict)
     return listOfDicts
-
-a= getAllDaysListOfDicts()
-b=2

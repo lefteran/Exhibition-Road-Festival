@@ -42,26 +42,27 @@ def getEmissions(filename, emissionsDict):
 def getSensorId(filename):
     return re.search('-(.*)_', filename).group(1)
 
-def getSensorDataToExport(weekendSensorsEmissionsDict, todaysSensorsEmissionsDict):
+def getSensorDataToExport(weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict):
     sensorDataDict = {}
     for sensorKey, _ in weekendSensorsEmissionsDict.items():
         sensorDataDict[sensorKey] = []
     for sensorKey, _ in sensorDataDict.items():
+        sensorDataDict[sensorKey].extend(weekend1516SensorsEmissionsDict[sensorKey])
         sensorDataDict[sensorKey].extend(weekendSensorsEmissionsDict[sensorKey])
         sensorDataDict[sensorKey].extend(todaysSensorsEmissionsDict[sensorKey])
     return sensorDataDict
 
 
-def exportAvgEmissionsToJson(filename, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts):
+def exportAvgEmissionsToJson(filename, weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts):
     fp = open(filename,"w")
     fp.write("data = \'[")
-    sensorDataDict = getSensorDataToExport(weekendSensorsEmissionsDict, todaysSensorsEmissionsDict)
+    sensorDataDict = getSensorDataToExport(weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict)
     count = 0
     for _, sensorList in sensorDataDict.items():
         if count!=0:
             fp.write("\t")
-        fp.write("{\"no2Old\" : \"%.2f\", \"no2New\" : \"%.2f\", \"pm10Old\" : \"%.2f\", \"pm10New\" : \"%.2f\", \"pm25Old\" : \"%.2f\", \"pm25New\" : \"%.2f\"}"\
-        %(sensorList[0], sensorList[3], sensorList[1], sensorList[4], sensorList[2], sensorList[5]))
+        fp.write("{\"no2_1516\" : \"%.2f\", \"no2Old\" : \"%.2f\", \"no2New\" : \"%.2f\", \"pm10_1516\" : \"%.2f\", \"pm10Old\" : \"%.2f\", \"pm10New\" : \"%.2f\", \"pm25_1516\" : \"%.2f\", \"pm25Old\" : \"%.2f\", \"pm25New\" : \"%.2f\"}"\
+        %(sensorList[0], sensorList[3], sensorList[6], sensorList[1], sensorList[4], sensorList[7], sensorList[2], sensorList[5], sensorList[8]))
         # if count!= len(sensorDataDict)-1:
         fp.write(",\\\n")
         # else:
@@ -104,11 +105,14 @@ def getAllSensorsEmissionsDict(emissionsPath):
     return allSensorsEmissionsDict
 
 
-
+weekend1516EmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekend1516_emissions")
 weekendEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\weekend_emissions")
 todaysEmissionsPath = os.path.join(os.getcwd(), "pythonScript\\todays_emissions")
+
+weekend1516SensorsEmissionsDict = getAllSensorsEmissionsDict(weekend1516EmissionsPath)
 weekendSensorsEmissionsDict = getAllSensorsEmissionsDict(weekendEmissionsPath)
 todaysSensorsEmissionsDict = getAllSensorsEmissionsDict(todaysEmissionsPath)
+
 weekdayListOfDicts = emissionsLineChartCsvToJson.getAllDaysListOfDicts()
 
-exportAvgEmissionsToJson("emissionData.json", weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts)
+exportAvgEmissionsToJson("emissionData.json", weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts)
