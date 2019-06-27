@@ -11,3 +11,6 @@
 - [ ] ~~traffic js file to get the values from fixedWeekTrafficData.json file for fixed week~~
 - [ ] subscripts for NO2
 - [ ] convert calculateAvgFlowList --> calculateAvgFlowDict
+- [ ] check whether the data from the website that Marc suggested can be downloaded automatically
+- [ ] one line chart per sensor
+- [ ] download wednesday emission data
