@@ -44,6 +44,23 @@
         align-content: center;
         display: inline-block; 
         }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
   </style>
 
 </head>
@@ -58,10 +75,19 @@
       
 
   <div class="container">
-    <canvas id="emissionsBarChart"></canvas>
-    <canvas id="emissionsLineChart33" height="300" width="500"></canvas>
-    <canvas id="emissionsLineChart37" height="300" width="500"></canvas>
-    <canvas id="emissionsLineChart39" height="300" width="500"></canvas>
+      <canvas id="emissionsBarChart"></canvas>
+  </div>
+
+  <div class="container" style="width:33%; height:33%; float: left; padding-top: 80px; padding-bottom: 100px;">
+    <canvas id="emissionsLineChart33"></canvas>
+  </div>
+
+  <div class="container" style="width:33%; height:33%; float: left; padding-top: 80px; padding-bottom: 100px;">          
+    <canvas id="emissionsLineChart37"></canvas>
+  </div>
+
+  <div class="container" style="width:33%; height:33%; float: left;  padding-top: 80px; padding-bottom: 100px;">
+    <canvas id="emissionsLineChart39"></canvas>
   </div>
 
   <script type="text/javascript" src="emissionData.json"></script>
