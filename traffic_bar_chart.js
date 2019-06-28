@@ -62,7 +62,7 @@ let massPopChart = new Chart(trafficChart, {
 	options:{
 		title:{
 			display:true,
-			text:'Average vehicle flows per 15 min',
+			text:'Average vehicle flows',
 			fontSize:25
 		},
 		legend:{
@@ -82,6 +82,14 @@ let massPopChart = new Chart(trafficChart, {
 		},
 		tooltips:{
 			enabled:true
+		},
+		scales: {
+			yAxes: [{
+				scaleLabel: {
+				  display: true,
+				  labelString: 'Number of vehicles per 15 min'
+				}
+			  }]
 		}
 	}
 });

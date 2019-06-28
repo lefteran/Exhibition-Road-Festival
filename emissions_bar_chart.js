@@ -51,7 +51,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 		labels:['Intersection (2037150)', 'Science Museum (2033150)', 'Natural History Museum (2039150)'],
 		datasets:[
 			{
-				label:'NO2 - 15,16/06/2019',
+				label: 'NO\u2082 - 15,16/06/2019',
 				data:[sensor1Emissions[0], sensor2Emissions[0], sensor3Emissions[0]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -65,7 +65,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'NO2 - 22,23/06/2019',
+				label:'NO\u2082 - 22,23/06/2019',
 				data:[sensor1Emissions[1], sensor2Emissions[1], sensor3Emissions[1]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -79,7 +79,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'NO2 - 29/06/2019',
+				label:'NO\u2082 - 29/06/2019',
 				data:[sensor1Emissions[2], sensor2Emissions[2], sensor3Emissions[2]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -93,7 +93,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'PM10 - 15,16/06/2019',
+				label:'PM\u2081\u2080 - 15,16/06/2019',
 				data:[sensor1Emissions[3], sensor2Emissions[3], sensor3Emissions[3]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -107,7 +107,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'PM10 - 22,23/06/2019',
+				label:'PM\u2081\u2080 - 22,23/06/2019',
 				data:[sensor1Emissions[4], sensor2Emissions[4], sensor3Emissions[4]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -121,7 +121,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'PM10 - 29/06/2019',
+				label:'PM\u2081\u2080 - 29/06/2019',
 				data:[sensor1Emissions[5], sensor2Emissions[5], sensor3Emissions[5]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -135,7 +135,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'PM2.5 - 15,16/06/2019',
+				label:'PM\u2082.\u2085 - 15,16/06/2019',
 				data:[sensor1Emissions[6], sensor2Emissions[6], sensor3Emissions[6]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -148,7 +148,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
             {
-				label:'PM2.5 - 22,23/06/2019',
+				label:'PM\u2082.\u2085 - 22,23/06/2019',
 				data:[sensor1Emissions[7], sensor2Emissions[7], sensor3Emissions[7]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -161,7 +161,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 				hoverBorderColor:'#000'
 			},
 			{
-				label:'PM2.5 - 29/06/2019',
+				label:'PM\u2082.\u2085 - 29/06/2019',
 				data:[sensor1Emissions[8], sensor2Emissions[8], sensor3Emissions[8]],
 				//backgroundColor:'green',
 				backgroundColor:[
@@ -198,6 +198,14 @@ let massPopChart = new Chart(emissionsBarChart, {
 		},
 		tooltips:{
 			enabled:true
+		},
+		scales: {
+			yAxes: [{
+				scaleLabel: {
+				  display: true,
+				  labelString: 'concentration (ug/m\u00B3)'
+				}
+			  }]
 		}
 	}
 });

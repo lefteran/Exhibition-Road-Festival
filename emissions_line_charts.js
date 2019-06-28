@@ -48,7 +48,7 @@ let theEmissionsLineChart33 = new Chart(emissionsLineChart33, {
         labels: ["Saturday 22/6", "Sunday 23/6", "Monday 24/6", "Tuesday 25/6", "Wednesday 26/6", "Thursday 27/6", "Friday 28/6", "Saturday 29/6", "Sunday 30/6"],
         datasets: [
             {
-                label: "NO2",
+                label: "NO\u2082",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(255, 99, 132, 1)",
@@ -69,7 +69,7 @@ let theEmissionsLineChart33 = new Chart(emissionsLineChart33, {
                 data: [no2_33_emissions[0], no2_33_emissions[1], no2_33_emissions[2], no2_33_emissions[3], no2_33_emissions[4], no2_33_emissions[5], no2_33_emissions[6], no2_33_emissions[7], no2_33_emissions[8]]
             },
             {
-                label: "PM10",
+                label: "PM\u2081\u2080",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(50, 150, 250, 1)",
@@ -90,7 +90,7 @@ let theEmissionsLineChart33 = new Chart(emissionsLineChart33, {
                 data: [pm10_33_emissions[0], pm10_33_emissions[1], pm10_33_emissions[2], pm10_33_emissions[3], pm10_33_emissions[4], pm10_33_emissions[5], pm10_33_emissions[6]]
             },
             {
-                label: "PM2.5",
+                label: "PM\u2082.\u2085",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(0, 255, 127, 1)",
@@ -122,7 +122,7 @@ let theEmissionsLineChart37 = new Chart(emissionsLineChart37, {
         labels: ["Saturday 22/6", "Sunday 23/6", "Monday 24/6", "Tuesday 25/6", "Wednesday 26/6", "Thursday 27/6", "Friday 28/6", "Saturday 29/6", "Sunday 30/6"],
         datasets: [
             {
-                label: "NO2",
+                label: "NO\u2082",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(255, 99, 132, 1)",
@@ -143,7 +143,7 @@ let theEmissionsLineChart37 = new Chart(emissionsLineChart37, {
                 data: [no2_37_emissions[0], no2_37_emissions[1], no2_37_emissions[2], no2_37_emissions[3], no2_37_emissions[4], no2_37_emissions[5], no2_37_emissions[6], no2_37_emissions[7], no2_37_emissions[8]]
             },
             {
-                label: "PM10",
+                label: "PM\u2081\u2080",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(50, 150, 250, 1)",
@@ -164,7 +164,7 @@ let theEmissionsLineChart37 = new Chart(emissionsLineChart37, {
                 data: [pm10_37_emissions[0], pm10_37_emissions[1], pm10_37_emissions[2], pm10_37_emissions[3], pm10_37_emissions[4], pm10_37_emissions[5], pm10_37_emissions[6]]
             },
             {
-                label: "PM2.5",
+                label: "PM\u2082.\u2085",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(0, 255, 127, 1)",
@@ -196,7 +196,7 @@ let theEmissionsLineChart39 = new Chart(emissionsLineChart39, {
         labels: ["Saturday 22/6", "Sunday 23/6", "Monday 24/6", "Tuesday 25/6", "Wednesday 26/6", "Thursday 27/6", "Friday 28/6", "Saturday 29/6", "Sunday 30/6"],
         datasets: [
             {
-                label: "NO2",
+                label: "NO\u2082",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(255, 99, 132, 1)",
@@ -217,7 +217,7 @@ let theEmissionsLineChart39 = new Chart(emissionsLineChart39, {
                 data: [no2_39_emissions[0], no2_39_emissions[1], no2_39_emissions[2], no2_39_emissions[3], no2_39_emissions[4], no2_39_emissions[5], no2_39_emissions[6], no2_39_emissions[7], no2_39_emissions[8]]
             },
             {
-                label: "PM10",
+                label: "PM\u2081\u2080",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(50, 150, 250, 1)",
@@ -238,7 +238,7 @@ let theEmissionsLineChart39 = new Chart(emissionsLineChart39, {
                 data: [pm10_39_emissions[0], pm10_39_emissions[1], pm10_39_emissions[2], pm10_39_emissions[3], pm10_39_emissions[4], pm10_39_emissions[5], pm10_39_emissions[6]]
             },
             {
-                label: "PM2.5",
+                label: "PM\u2082.\u2085",
                 fill: false,
                 lineTension: 0.1,
                 backgroundColor: "rgba(0, 255, 127, 1)",
