@@ -52,7 +52,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 		datasets:[
 			{
 				label: 'NO\u2082 - 15,16/06/2019',
-				data:[sensor1Emissions[0], sensor2Emissions[0], sensor3Emissions[0]],
+				data:[sensor2Emissions[0], sensor1Emissions[0], sensor3Emissions[0]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(255, 99, 132, 0.6)',
@@ -66,7 +66,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'NO\u2082 - 22,23/06/2019',
-				data:[sensor1Emissions[1], sensor2Emissions[1], sensor3Emissions[1]],
+				data:[sensor2Emissions[1], sensor1Emissions[1], sensor3Emissions[1]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(255, 99, 132, 0.8)',
@@ -94,7 +94,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM\u2081\u2080 - 15,16/06/2019',
-				data:[sensor1Emissions[3], sensor2Emissions[3], sensor3Emissions[3]],
+				data:[sensor2Emissions[3], sensor1Emissions[3], sensor3Emissions[3]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(50, 150, 250, 0.3)',
@@ -108,7 +108,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM\u2081\u2080 - 22,23/06/2019',
-				data:[sensor1Emissions[4], sensor2Emissions[4], sensor3Emissions[4]],
+				data:[sensor2Emissions[4], sensor1Emissions[4], sensor3Emissions[4]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(50, 150, 250, 0.6)',
@@ -136,7 +136,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM\u2082.\u2085 - 15,16/06/2019',
-				data:[sensor1Emissions[6], sensor2Emissions[6], sensor3Emissions[6]],
+				data:[sensor2Emissions[6], sensor1Emissions[6], sensor3Emissions[6]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(0, 255, 127, 0.3)',
@@ -149,7 +149,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
             {
 				label:'PM\u2082.\u2085 - 22,23/06/2019',
-				data:[sensor1Emissions[7], sensor2Emissions[7], sensor3Emissions[7]],
+				data:[sensor2Emissions[7], sensor1Emissions[7], sensor3Emissions[7]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(0, 255, 127, 0.6)',
