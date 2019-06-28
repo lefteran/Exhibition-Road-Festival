@@ -178,7 +178,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 	options:{
 		title:{
 			display:true,
-			text:'Average emissions',
+			text:'Average concentration',
 			fontSize:25
 		},
 		legend:{

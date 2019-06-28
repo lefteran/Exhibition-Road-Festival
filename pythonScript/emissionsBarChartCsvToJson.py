@@ -106,15 +106,19 @@ def getAllSensorsEmissionsDict(emissionsPath):
     return allSensorsEmissionsDict
 
 
-weekend1516EmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend1516_emissions"
-weekendEmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend_emissions"
-todaysEmissionsPath = str(pathlib.Path(__file__).parent) + "\\todays_emissions"
+def getEmissionsJsonFile():
+    weekend1516EmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend1516_emissions"
+    weekendEmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend_emissions"
+    todaysEmissionsPath = str(pathlib.Path(__file__).parent) + "\\todays_emissions"
 
-weekend1516SensorsEmissionsDict = getAllSensorsEmissionsDict(weekend1516EmissionsPath)
-weekendSensorsEmissionsDict = getAllSensorsEmissionsDict(weekendEmissionsPath)
-todaysSensorsEmissionsDict = getAllSensorsEmissionsDict(todaysEmissionsPath)
+    weekend1516SensorsEmissionsDict = getAllSensorsEmissionsDict(weekend1516EmissionsPath)
+    weekendSensorsEmissionsDict = getAllSensorsEmissionsDict(weekendEmissionsPath)
+    todaysSensorsEmissionsDict = getAllSensorsEmissionsDict(todaysEmissionsPath)
 
-weekdayListOfDicts = emissionsLineChartCsvToJson.getAllDaysListOfDicts()
+    weekdayListOfDicts = emissionsLineChartCsvToJson.getAllDaysListOfDicts()
 
-exportFilenamePath = "d:\\Github\\Exhibition-Road-Festival" + "\\emissionData.json"
-exportAvgEmissionsToJson(exportFilenamePath, weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts)
+    exportFilenamePath = "d:\\Github\\Exhibition-Road-Festival" + "\\emissionData.json"
+    exportAvgEmissionsToJson(exportFilenamePath, weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict, weekdayListOfDicts)
+
+
+getEmissionsJsonFile()
