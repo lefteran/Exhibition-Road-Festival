@@ -31,7 +31,7 @@ def getEmissions(filename, emissionsDict):
     next(fp)
     for line in fp:
         elements = line.split(",")
-        no2 = float(elements[2].strip().replace('"', ''))
+        no2 = 1.9 * float(elements[2].strip().replace('"', ''))
         pm10 = float(elements[5].strip().replace('"', ''))
         pm25 = float(elements[8].strip().replace('"', ''))
         emissionsDict['no2'].append(no2)
