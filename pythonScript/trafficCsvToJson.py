@@ -1,5 +1,6 @@
 import os.path
 from time import time
+import datetime
 
 def initFlowsDict():
     flowsDict = {
@@ -70,44 +71,61 @@ def exportToJson(filename, week1Flows, week2Flows):
 
 
 def getFixedWeekFlowsDict():
+    print("Preparing traffic json data for last weekend ...")
     flowsDict = initFlowsDict()
     count = 0
-    saturdayPath = os.path.join(os.getcwd(), "pythonScript\Saturday_traffic")
+    # saturdayPath = os.path.join(os.getcwd(), "pythonScript\Saturday_traffic")
+    saturdayPath = "d:\\Github\\Exhibition-Road-Festival\\pythonScript\\Saturday_traffic"
     saturdayList = os.listdir(saturdayPath)
     for filename in saturdayList:
         count += 1
         filePath = saturdayPath + "\\" + filename
-        print("%d. Saturday file %s" %(count, filePath))
+        # print("%d. Saturday file %s" %(count, filePath))
         getFlows(filePath, flowsDict)
 
     count = 0
     sundayPath = os.path.join(os.getcwd(), "pythonScript\Sunday_traffic")
+    sundayPath = "d:\\Github\\Exhibition-Road-Festival\\pythonScript\\Sunday_traffic"
     sundayList = os.listdir(sundayPath)
     for filename in sundayList:
         count += 1
         filePath = sundayPath + "\\" + filename
-        print("%d. Sunday file %s" %(count, filePath))
+        # print("%d. Sunday file %s" %(count, filePath))
         getFlows(filePath, flowsDict)
     return flowsDict
 
 
 def getTodaysFlowsDict():
+    print("Preparing today's traffic json data ...")
     flowsDict = initFlowsDict()
     count = 0
-    todaysPath = os.path.join(os.getcwd(), "pythonScript\\todays_traffic")
+    now = datetime.datetime.now()
+    day = now.strftime("%d")
+    if day == '28':
+        todaysDir = "\\traffic2806"
+    elif day == '29':
+        todaysDir = "\\traffic2906"
+    else:
+        todaysDir = "\\traffic3006"
+    # todaysPath = os.path.join(os.getcwd(), todaysDir)
+    todaysPath = "d:\\Github\\Exhibition-Road-Festival\\pythonScript" + todaysDir
     todaysList = os.listdir(todaysPath)
     for filename in todaysList:
         count += 1
         filePath = todaysPath + "\\" + filename
-        print("%d. Today's file %s" %(count, filePath))
+        # print("%d. Today's file %s" %(count, filePath))
         getFlows(filePath, flowsDict)
     return flowsDict
 
+def getTrafficJsonFile():
+    # start_time = time()
+    print("Preparing traffic json file...")
+    fixedWeekFlowsDict = getFixedWeekFlowsDict()
+    fixedWeekAvgFlowList = calculateAvgFlowList(fixedWeekFlowsDict)
+    todayFlowsDict = getTodaysFlowsDict()
+    todayFlowList = calculateAvgFlowList(todayFlowsDict)
+    exportToJson("trafficData.json", fixedWeekAvgFlowList,todayFlowList)
+    # print("--- %s seconds ---" % (time() - start_time))
 
-start_time = time()
-fixedWeekFlowsDict = getFixedWeekFlowsDict()
-fixedWeekAvgFlowList = calculateAvgFlowList(fixedWeekFlowsDict)
-todayFlowsDict = getTodaysFlowsDict()
-todayFlowList = calculateAvgFlowList(todayFlowsDict)
-exportToJson("trafficData.json", fixedWeekAvgFlowList,todayFlowList)
-print("--- %s seconds ---" % (time() - start_time))
+
+# getTrafficJsonFile()

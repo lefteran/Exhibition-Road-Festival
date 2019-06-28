@@ -11,11 +11,15 @@ import os.path
 # print(os.listdir(newpath))
 
 
+# from pathlib import Path
 from pathlib import Path
-import pathlib
 
-
-print(pathlib.Path(__file__).parent)
+fileName = "detdata28062019-153026.csv"
+if os.path.isfile("d:\\Github\\Exhibition-Road-Festival\\pythonScript\\traffic2806" + "\\" + fileName):
+    print("1")
+else:
+    print("2")
+# print(pathlib.Path(__file__).parent)
 # emissionsPath =  Path("D:/Github/Exhibition-Road-Festival/pythonScript/weekend1516_emissions")
 # emissionsFileList = os.listdir(emissionsPath)
 # print(emissionsFileList)

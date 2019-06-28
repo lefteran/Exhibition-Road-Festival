@@ -107,6 +107,7 @@ def getAllSensorsEmissionsDict(emissionsPath):
 
 
 def getEmissionsJsonFile():
+    print("Preparing data for json emissions file ...")
     weekend1516EmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend1516_emissions"
     weekendEmissionsPath = str(pathlib.Path(__file__).parent) + "\\weekend_emissions"
     todaysEmissionsPath = str(pathlib.Path(__file__).parent) + "\\todays_emissions"
