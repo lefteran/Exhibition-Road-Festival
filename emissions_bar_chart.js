@@ -80,7 +80,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'NO\u2082 - 29/06/2019',
-				data:[sensor1Emissions[2], sensor2Emissions[2], sensor3Emissions[2]],
+				data:[sensor2Emissions[2], sensor1Emissions[2], sensor3Emissions[2]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(255, 99, 132, 1)',
@@ -122,7 +122,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM\u2081\u2080 - 29/06/2019',
-				data:[sensor1Emissions[5], sensor2Emissions[5], sensor3Emissions[5]],
+				data:[sensor2Emissions[5], sensor1Emissions[5], sensor3Emissions[5]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(50, 150, 250, 0.8)',
@@ -162,7 +162,7 @@ let massPopChart = new Chart(emissionsBarChart, {
 			},
 			{
 				label:'PM\u2082.\u2085 - 29/06/2019',
-				data:[sensor1Emissions[8], sensor2Emissions[8], sensor3Emissions[8]],
+				data:[sensor2Emissions[8], sensor1Emissions[8], sensor3Emissions[8]],
 				//backgroundColor:'green',
 				backgroundColor:[
 					'rgba(0, 255, 127, 0.8)',

@@ -59,11 +59,12 @@ def exportAvgEmissionsToJson(filename, weekend1516SensorsEmissionsDict, weekendS
     fp.write("data = \'[")
     sensorDataDict = getSensorDataToExport(weekend1516SensorsEmissionsDict, weekendSensorsEmissionsDict, todaysSensorsEmissionsDict)
     count = 0
-    for _, sensorList in sensorDataDict.items():
+    for sensorKey, sensorList in sensorDataDict.items():
         if count!=0:
             fp.write("\t")
-        fp.write("{\"no2_1516\" : \"%.2f\", \"no2Old\" : \"%.2f\", \"no2New\" : \"%.2f\", \"pm10_1516\" : \"%.2f\", \"pm10Old\" : \"%.2f\", \"pm10New\" : \"%.2f\", \"pm25_1516\" : \"%.2f\", \"pm25Old\" : \"%.2f\", \"pm25New\" : \"%.2f\"}"\
-        %(sensorList[0], sensorList[3], sensorList[6], sensorList[1], sensorList[4], sensorList[7], sensorList[2], sensorList[5], sensorList[8]))
+        line = "{\"no2_1516\" : \"%.2f\", \"no2Old\" : \"%.2f\", \"no2New\" : \"%.2f\", \"pm10_1516\" : \"%.2f\", \"pm10Old\" : \"%.2f\", \"pm10New\" : \"%.2f\", \"pm25_1516\" : \"%.2f\", \"pm25Old\" : \"%.2f\", \"pm25New\" : \"%.2f\"}"\
+        %(sensorList[0], sensorList[3], sensorList[6], sensorList[1], sensorList[4], sensorList[7], sensorList[2], sensorList[5], sensorList[8])
+        fp.write(line)
         # if count!= len(sensorDataDict)-1:
         fp.write(",\\\n")
         # else:
