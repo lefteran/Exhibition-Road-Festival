@@ -28,6 +28,7 @@ def calculateSensorAvgEmissionList(emissionsDict):
 def getEmissions(filename, emissionsDict):
     fp = open(filename,"r")
     next(fp)
+    print("filename is ", filename)
     for line in fp:
         elements = line.split(",")
         no2 = 1.9 * float(elements[2].strip().replace('"', ''))
