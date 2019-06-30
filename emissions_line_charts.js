@@ -87,7 +87,7 @@ let theEmissionsLineChart33 = new Chart(emissionsLineChart33, {
                 pointHoverBorderWidth: 5,
                 pointRadius: 1,
                 pointHitRadius: 1,
-                data: [pm10_33_emissions[0], pm10_33_emissions[1], pm10_33_emissions[2], pm10_33_emissions[3], pm10_33_emissions[4], pm10_33_emissions[5], pm10_33_emissions[6]]
+                data: [pm10_33_emissions[0], pm10_33_emissions[1], pm10_33_emissions[2], pm10_33_emissions[3], pm10_33_emissions[4], pm10_33_emissions[5], pm10_33_emissions[6], pm10_33_emissions[7], pm10_33_emissions[8]]
             },
             {
                 label: "PM\u2082.\u2085",
@@ -108,7 +108,7 @@ let theEmissionsLineChart33 = new Chart(emissionsLineChart33, {
                 pointHoverBorderWidth: 5,
                 pointRadius: 1,
                 pointHitRadius: 1,
-                data: [pm25_33_emissions[0], pm25_33_emissions[1], pm25_33_emissions[2], pm25_33_emissions[3], pm25_33_emissions[4], pm25_33_emissions[5], pm25_33_emissions[6]]
+                data: [pm25_33_emissions[0], pm25_33_emissions[1], pm25_33_emissions[2], pm25_33_emissions[3], pm25_33_emissions[4], pm25_33_emissions[5], pm25_33_emissions[6], pm25_33_emissions[7], pm25_33_emissions[8]]
             },
         ]
     }
@@ -161,7 +161,7 @@ let theEmissionsLineChart37 = new Chart(emissionsLineChart37, {
                 pointHoverBorderWidth: 5,
                 pointRadius: 1,
                 pointHitRadius: 1,
-                data: [pm10_37_emissions[0], pm10_37_emissions[1], pm10_37_emissions[2], pm10_37_emissions[3], pm10_37_emissions[4], pm10_37_emissions[5], pm10_37_emissions[6]]
+                data: [pm10_37_emissions[0], pm10_37_emissions[1], pm10_37_emissions[2], pm10_37_emissions[3], pm10_37_emissions[4], pm10_37_emissions[5], pm10_37_emissions[6], pm10_37_emissions[7], pm10_37_emissions[8]]
             },
             {
                 label: "PM\u2082.\u2085",
@@ -182,7 +182,7 @@ let theEmissionsLineChart37 = new Chart(emissionsLineChart37, {
                 pointHoverBorderWidth: 5,
                 pointRadius: 1,
                 pointHitRadius: 1,
-                data: [pm25_37_emissions[0], pm25_37_emissions[1], pm25_37_emissions[2], pm25_37_emissions[3], pm25_37_emissions[4], pm25_37_emissions[5], pm25_37_emissions[6]]
+                data: [pm25_37_emissions[0], pm25_37_emissions[1], pm25_37_emissions[2], pm25_37_emissions[3], pm25_37_emissions[4], pm25_37_emissions[5], pm25_37_emissions[6], pm25_37_emissions[7], pm25_37_emissions[8]]
             },
         ]
     }
@@ -235,7 +235,7 @@ let theEmissionsLineChart39 = new Chart(emissionsLineChart39, {
                 pointHoverBorderWidth: 5,
                 pointRadius: 1,
                 pointHitRadius: 1,
-                data: [pm10_39_emissions[0], pm10_39_emissions[1], pm10_39_emissions[2], pm10_39_emissions[3], pm10_39_emissions[4], pm10_39_emissions[5], pm10_39_emissions[6]]
+                data: [pm10_39_emissions[0], pm10_39_emissions[1], pm10_39_emissions[2], pm10_39_emissions[3], pm10_39_emissions[4], pm10_39_emissions[5], pm10_39_emissions[6], pm10_39_emissions[7], pm10_39_emissions[8]]
             },
             {
                 label: "PM\u2082.\u2085",
@@ -256,7 +256,7 @@ let theEmissionsLineChart39 = new Chart(emissionsLineChart39, {
                 pointHoverBorderWidth: 5,
                 pointRadius: 1,
                 pointHitRadius: 1,
-                data: [pm25_39_emissions[0], pm25_39_emissions[1], pm25_39_emissions[2], pm25_39_emissions[3], pm25_39_emissions[4], pm25_39_emissions[5], pm25_39_emissions[6]]
+                data: [pm25_39_emissions[0], pm25_39_emissions[1], pm25_39_emissions[2], pm25_39_emissions[3], pm25_39_emissions[4], pm25_39_emissions[5], pm25_39_emissions[6], pm25_39_emissions[7], pm25_39_emissions[8]]
             },
         ]
     }
