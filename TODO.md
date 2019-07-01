@@ -13,4 +13,5 @@
 - [ ] convert calculateAvgFlowList --> calculateAvgFlowDict
 - [ ] check whether the data from the website that Marc suggested can be downloaded automatically
 - [ ] one line chart per sensor
-- [ ] download wednesday emission data
+- [x] download wednesday emission data
+
